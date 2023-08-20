@@ -13,7 +13,7 @@ most_popular = most_popular_zip_code.loc[most_popular_zip_code.groupby('zip_code
 
 # get the percentage of sales per store
 # sum of all bottles sold
-sum_bottles_sold = data['bottles_sold'].sum()
+sum_bottles_sold = data['bottles_sold'].sum() 
 # sum of bottles sold per store
 sum_bottles_sold_per_store = data.groupby(['store_number', 'store_name'])['bottles_sold'].sum().reset_index()
 # Calculate the percentage of sales for each store
